@@ -3,9 +3,5 @@ composer.json
 composer.lock
 vendor/*
 
-#compiled scss
-style/*.css
-style/*.css.map
-
 #other
 phpinfo.php
