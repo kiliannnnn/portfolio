@@ -45,7 +45,13 @@
     </section>
     <section id="skills" class="uneven">
         <h2>Connaissances</h2>
-
+        <div class="skill_container">
+            <img src="assets/composer.jpg">
+            <span>
+                <h2>Composer</h2>
+                <h4>blablabla</h4>
+            </span>
+        </div>
     </section>
     <section id="curriculum" class="even">
         <h2>Mon parcours</h2>

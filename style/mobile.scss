@@ -101,7 +101,31 @@ textarea {
 }
   
 .back {
-    background-color: rgb(93, 161, 255);;
+    background-color: rgb(93, 161, 255);
     color: black;
     transform: rotateY(180deg);
+}
+
+.skill_container {
+    img {
+        height: 190px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    span {
+        display: none;
+    }
+    :hover {
+        width: 100%;
+        margin: 20px;
+        img {
+            height: 190px;
+        }
+        span {
+            display: block;
+            font-size: 20px;
+            text-align: center;
+            margin: 10px;
+        }
+    }
 }
