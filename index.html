@@ -19,23 +19,33 @@
 <header>
     <nav>
         <ul>
-            <li><a href="#home"><img src="assets/accueil.png"></a></li>
-            <li><a href="#projects"><img src="assets/projet.png"></a></li>
-            <li><a href="#skills"><img src="assets/skills.png"></a></li>
-            <li><a href="#curriculum"><img src="assets/destination.png"></a></li>
-            <li><a href="#contact"><img src="assets/contact.png"></a></li>
+            <li>
+                <a href="#home"><img src="assets/accueil.png"><div class="light"></div></a>
+            </li>
+            <li>
+                <a href="#projects"><img src="assets/projet.png"><div class="light"></div></a>
+            </li>
+            <li>
+                <a href="#skills"><img src="assets/skills.png"><div class="light"></div></a>
+            </li>
+            <li>
+                <a href="#curriculum"><img src="assets/destination.png"><div class="light"></div></a>
+            </li>
+            <li>
+                <a href="#contact"><img src="assets/contact.png"><div class="light"></div></a>
+            </li>
         </ul>
     </nav>
 </header>
 <body>
     <section id="home" class="uneven">
-        <h1>Kilian COUDURIER</h1>
+        <h1 class="textMoveIn">Kilian COUDURIER</h1>
         <h4>J'ai 20 ans, je suis étudiant et passionné d'informatique<br>
         Curieux, j'adore découvrir et apprendre de nouvelles choses<br>
         </h4>            
     </section>
     <section id="projects" class="even">
-        <h2>Quelques projets</h2>
+        <h2>Quelques projets<div class="line"></div></h2>
         <div class="container">
             <div class="flipcard">
                 <div class="front"><p>Ce site internet</p></div>
@@ -44,7 +54,7 @@
         </div>
     </section>
     <section id="skills" class="uneven">
-        <h2>Connaissances</h2>
+        <h2>Connaissances<div class="line"></div></h2>
         <div class="skill_container">
             <img src="assets/composer.jpg">
             <span>
@@ -54,7 +64,7 @@
         </div>
     </section>
     <section id="curriculum" class="even">
-        <h2>Mon parcours</h2>
+        <h2>Mon parcours<div class="line"></div></h2>
         <div class="container">
             <div class="flipcard">
                 <div class="front"><p>BTS SIO<br>2021-2023</p></div>
@@ -81,17 +91,17 @@
         </div>
     </section>
     <section id="contact" class="uneven">
-        <h2>Me contacter</h2>
+        <h2>Me contacter<div class="line"></div></h2>
         <ul id="social">
             <li><a href="https://github.com/kiliannnnn"><img src="assets/github.png"></a></li>
             <li><a href="https://www.linkedin.com/in/kilian-coudurier-a59469229/"><img src="assets/linkedin.png"></a></li>
         </ul>
         <ul>
-            <li>+33 7 82 43 07 53</li>
-            <li>coudurier.kilian@gmail.com</li>
+            <li><img src="assets/telephone.png"> : +33 7 82 43 07 53</li>
+            <li><img src="assets/email.png"> : coudurier.kilian@gmail.com</li>
             <li><h2>ou</h2></li>
         </ul>
-        <form action="send_mail.php" method="POST">
+        <form action="https://formsubmit.co/cce90e889152eb4e516d6b9076451d01" method="POST">
             <label for="sender"></label>
             <input type="email" name="sender" required placeholder="Votre adresse e-mail">
             <label for="subject"></label>

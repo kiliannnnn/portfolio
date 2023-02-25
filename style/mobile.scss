@@ -8,10 +8,20 @@ section {
 .even {
     background-color: rgb(55, 140, 255);
     color: white;
+    h2 {
+        div {
+            background-color: white;
+        }
+    }
 }
 .uneven {
     background-color: rgb(255, 255, 255);
     color: black;
+    h2 {
+        div {
+            background-color: black;
+        }
+    }
 }
 ul, #contact > #social {
     padding: 0;
@@ -24,25 +34,42 @@ ul, #contact > #social {
     }
 }
 nav {
-    z-index: 5;
+    z-index: 1;
     position: fixed;
     width: 100vw;
     bottom: 0;
     height: auto;
+    border-top: 1px solid black;
     ul {
         background-color: rgb(55, 140, 255);
-
+        .light {
+            position: absolute;
+            margin-left: -8px;
+            margin-top: -40px;
+            width: 48px;
+            height: 0px;
+            background-color: darkblue;
+            opacity: 0.3;
+            border-radius: 20px;
+        }
+        li {
+            :hover {
+                .light {
+                    height: 42px;
+                }
+            }
+        }
     }
 }
 h1 {
     font-size: 40px;
 }
 h2 {
-    font-size: 30;
     text-align: center;
 }
 h4 {
     font-size: 24px;
+    animation: textAppearIn 3.4s;
 }
 footer {
     height: 60px;
@@ -93,16 +120,11 @@ textarea {
     backface-visibility: hidden;
     border-radius: 14px;
     border: 1px solid black;
-}
-  
-.front {
-    background-color: rgb(39, 92, 167);
-    color: white;
-}
-  
-.back {
-    background-color: rgb(93, 161, 255);
+    background-color: #ddd;
     color: black;
+}
+
+.back {
     transform: rotateY(180deg);
 }
 
@@ -115,17 +137,49 @@ textarea {
     span {
         display: none;
     }
-    :hover {
-        width: 100%;
-        margin: 20px;
-        img {
-            height: 190px;
-        }
-        span {
-            display: block;
-            font-size: 20px;
-            text-align: center;
-            margin: 10px;
-        }
+    :hover img{
+        height: 200px;
     }
+}
+@keyframes textMoveIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes underline {
+    0% {
+        margin: 0px 50% 0px 50%;
+    }
+    50% {
+        margin: 0px 36% 0px 36%;
+    }
+    100% {
+        margin: 0px 50% 0px 50%;
+    }
+}
+@keyframes textAppearIn {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.textMoveIn {
+    animation: textMoveIn 2.2s;
+}
+
+.line {
+    height: 3px;
+    animation: underline 4s infinite;
+    margin: 0px 36% 0px 36%;
 }
