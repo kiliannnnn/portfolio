@@ -72,7 +72,7 @@ h4 {
     animation: textAppearIn 3.4s;
 }
 footer {
-    height: 60px;
+    height: 50px;
 }
 input, textarea {
     display: flex;
@@ -97,8 +97,11 @@ textarea {
 }
 
 .container {
-    height: 100px;
-    margin: 20px;
+    height: 150px;
+    max-width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
   
 .flipcard {
@@ -122,6 +125,10 @@ textarea {
     border: 1px solid black;
     background-color: #ddd;
     color: black;
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .back {
@@ -170,10 +177,34 @@ textarea {
     margin: 0px 36% 0px 36%;
 }
 
-body.blur {
-    filter: blur(5px);
+#content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+.popup-blur {
+    height: 100%;
+    width: 100%;
+    background-color: #ddd;
+    opacity: 0.8;
+}
+#popup-container {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#popup-container.open {
+    display: block;
 }
 
-.popup-container {
-    font-size: 30px;
+.close-popup {
+    background-color: red;
 }

@@ -73,7 +73,7 @@ h4 {
 }
 
 footer {
-  height: 60px;
+  height: 50px;
 }
 
 input, textarea {
@@ -100,8 +100,11 @@ textarea {
 }
 
 .container {
-  height: 100px;
-  margin: 20px;
+  height: 150px;
+  max-width: 200px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .flipcard {
@@ -127,21 +130,13 @@ textarea {
   background-color: #ddd;
   color: black;
 }
+.front img, .back img {
+  width: 100%;
+  height: auto;
+}
 
 .back {
   transform: rotateY(180deg);
-}
-
-.skill_container img {
-  height: 190px;
-  border: 1px solid black;
-  border-radius: 10px;
-}
-.skill_container span {
-  display: none;
-}
-.skill_container :hover img {
-  height: 200px;
 }
 
 @keyframes textMoveIn {
@@ -183,4 +178,39 @@ textarea {
   height: 3px;
   animation: underline 4s infinite;
   margin: 0px 36% 0px 36%;
+}
+
+#content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.popup-blur {
+  height: 100%;
+  width: 100%;
+  background-color: #ddd;
+  opacity: 0.8;
+}
+
+#popup-container {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#popup-container.open {
+  display: block;
+}
+
+.close-popup {
+  background-color: red;
 }/*# sourceMappingURL=mobile.css.map */
