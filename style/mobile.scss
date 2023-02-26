@@ -128,19 +128,6 @@ textarea {
     transform: rotateY(180deg);
 }
 
-.skill_container {
-    img {
-        height: 190px;
-        border: 1px solid black;
-        border-radius: 10px;
-    }
-    span {
-        display: none;
-    }
-    :hover img{
-        height: 200px;
-    }
-}
 @keyframes textMoveIn {
     0% {
         opacity: 0;
@@ -173,7 +160,6 @@ textarea {
     }
 }
 
-
 .textMoveIn {
     animation: textMoveIn 2.2s;
 }
@@ -182,4 +168,12 @@ textarea {
     height: 3px;
     animation: underline 4s infinite;
     margin: 0px 36% 0px 36%;
+}
+
+body.blur {
+    filter: blur(5px);
+}
+
+.popup-container {
+    font-size: 30px;
 }
