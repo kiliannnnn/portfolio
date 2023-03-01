@@ -7,14 +7,11 @@ const popupContainerMysql = document.getElementById('popup-container-mysql');
 const popupContainerGit = document.getElementById('popup-container-git');
 const popupContainerDrupal = document.getElementById('popup-container-drupal');
 const popupContainerDocker = document.getElementById('popup-container-docker');
-var popupContainer = document.querySelectorAll('div.popup-container');
-var isPopupOpen = false;
 
 // Open popup
 const openButtonComposer = document.getElementById('open-popup-composer');
 openButtonComposer.addEventListener('click', () => {
   popupContainerComposer.classList.add('open');
-  isPopupOpen = true;
 });
 
 const openButtonScss = document.getElementById('open-popup-scss');
@@ -59,20 +56,45 @@ openButtonDocker.addEventListener('click', () => {
   isPopupOpen = true;
 });
 
-/* Close popup
-const closeButton = document.getElementsByClassName('close-popup');
+// Close popup
+const closeButton = document.getElementById('close-popup');
 closeButton.addEventListener('click', () => {
-  popupContainer.forEach((popup) => {
-    popup.classList.add('open');
-    popup.classList.remove('open');
-  });
-});*/
+  popupContainerComposer.classList.remove('open');
+  popupContainerScss.classList.remove('open');
+  popupContainerJs.classList.remove('open');
+  popupContainerPhp.classList.remove('open');
+  popupContainerMysql.classList.remove('open');
+  popupContainerGit.classList.remove('open');
+  popupContainerDrupal.classList.remove('open');
+  popupContainerDocker.classList.remove('open');
+});
 
-document.addEventListener('click', () => {
+/*document.addEventListener('click', () => {
   if (isPopupOpen) {
       popupContainer.forEach((popup) => {
       popup.classList.remove('open');
     });
     isPopupOpen = false;
   }
+});*/
+
+const shapes = document.querySelectorAll('.shape');
+const container = document.querySelector('.body-container');
+
+shapes.forEach((shape) => {
+  const randomX = Math.floor(Math.random() * 100);
+  const randomY = Math.floor(Math.random() * 250);
+  shape.style.left = `${randomX}%`;
+  shape.style.top = `${randomY}%`;
+});
+
+container.addEventListener('mousemove', (e) => {
+  const x = e.clientX;
+  const y = e.clientY;
+  shapes.forEach((shape) => {
+    const speed = shape.getAttribute('data-speed');
+    const xMove = (x * speed) / 100;
+    const yMove = (y * speed) / 100;
+    shape.style.transform = `translate(${xMove}px, ${yMove}px)`;
+  });
 });
