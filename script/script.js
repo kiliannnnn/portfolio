@@ -1,4 +1,4 @@
-// Each popup
+// find popup
 const popupContainerComposer = document.getElementById('popup-container-composer');
 const popupContainerScss = document.getElementById('popup-container-scss');
 const popupContainerJs = document.getElementById('popup-container-js');
@@ -17,84 +17,53 @@ openButtonComposer.addEventListener('click', () => {
 const openButtonScss = document.getElementById('open-popup-scss');
 openButtonScss.addEventListener('click', () => {
   popupContainerScss.classList.add('open');
-  isPopupOpen = true;
 });
 
 const openButtonJs = document.getElementById('open-popup-js');
 openButtonJs.addEventListener('click', () => {
   popupContainerJs.classList.add('open');
-  isPopupOpen = true;
 });
 
 const openButtonPhp = document.getElementById('open-popup-php');
 openButtonPhp.addEventListener('click', () => {
   popupContainerPhp.classList.add('open');
-  isPopupOpen = true;
 });
 
 const openButtonMysql = document.getElementById('open-popup-mysql');
 openButtonMysql.addEventListener('click', () => {
   popupContainerMysql.classList.add('open');
-  isPopupOpen = true;
-});
-
-const openButtonGit = document.getElementById('open-popup-git');
-openButtonGit.addEventListener('click', () => {
-  popupContainerGit.classList.add('open');
-  isPopupOpen = true;
 });
 
 const openButtonDrupal = document.getElementById('open-popup-drupal');
 openButtonDrupal.addEventListener('click', () => {
   popupContainerDrupal.classList.add('open');
-  isPopupOpen = true;
 });
 
 const openButtonDocker = document.getElementById('open-popup-docker');
 openButtonDocker.addEventListener('click', () => {
   popupContainerDocker.classList.add('open');
-  isPopupOpen = true;
 });
 
 // Close popup
-const closeButton = document.getElementById('close-popup');
-closeButton.addEventListener('click', () => {
+const closeButton = document.querySelectorAll('#close-popup');
+closeButton[0].addEventListener('click', () => {
   popupContainerComposer.classList.remove('open');
+});
+closeButton[1].addEventListener('click', () => {
   popupContainerScss.classList.remove('open');
+});
+closeButton[2].addEventListener('click', () => {
   popupContainerJs.classList.remove('open');
+});
+closeButton[3].addEventListener('click', () => {
   popupContainerPhp.classList.remove('open');
+});
+closeButton[4].addEventListener('click', () => {
   popupContainerMysql.classList.remove('open');
-  popupContainerGit.classList.remove('open');
-  popupContainerDrupal.classList.remove('open');
+});
+closeButton[5].addEventListener('click', () => {
+  popupContainerDrupal.classList.remove('open'); 
+});
+closeButton[6].addEventListener('click', () => {
   popupContainerDocker.classList.remove('open');
-});
-
-/*document.addEventListener('click', () => {
-  if (isPopupOpen) {
-      popupContainer.forEach((popup) => {
-      popup.classList.remove('open');
-    });
-    isPopupOpen = false;
-  }
-});*/
-
-const shapes = document.querySelectorAll('.shape');
-const container = document.querySelector('.body-container');
-
-shapes.forEach((shape) => {
-  const randomX = Math.floor(Math.random() * 100);
-  const randomY = Math.floor(Math.random() * 250);
-  shape.style.left = `${randomX}%`;
-  shape.style.top = `${randomY}%`;
-});
-
-container.addEventListener('mousemove', (e) => {
-  const x = e.clientX;
-  const y = e.clientY;
-  shapes.forEach((shape) => {
-    const speed = shape.getAttribute('data-speed');
-    const xMove = (x * speed) / 100;
-    const yMove = (y * speed) / 100;
-    shape.style.transform = `translate(${xMove}px, ${yMove}px)`;
-  });
 });

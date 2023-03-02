@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Gloock";
+  src: url(../assets/Gloock/Gloock-Regular.ttf);
+}
+* {
+  font-family: "Gloock";
+}
+
 body {
   margin: 0;
 }
@@ -209,28 +217,6 @@ textarea {
 }
 
 #skills > button img {
-  height: 150px;
-  width: 150px;
-}
-
-/* bubbles/logical shapes #EF6351 randomly placed all around the site with a hover effect that 
-makes them grow and change color to #F7A072
-max 2 per section
-*/
-.shape {
-  display: block;
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  z-index: 0;
-  background-color: #EF6351;
-  border-radius: 50%;
-  transition: 0.4s;
-}
-
-.shape:hover {
-  background-color: #F7A072;
-  height: 40px;
-  width: 40px;
-  transition: 0.4s;
+  max-height: 150px;
+  max-width: 150px;
 }/*# sourceMappingURL=mobile.css.map */
