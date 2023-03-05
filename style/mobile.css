@@ -19,7 +19,10 @@ section {
   background-color: #048ba8;
   color: white;
 }
-.even h2 div {
+.even div {
+  margin-bottom: 10px;
+}
+.even div .line {
   background-color: white;
 }
 
@@ -27,7 +30,10 @@ section {
   background-color: #EDF7F6;
   color: black;
 }
-.uneven h2 div {
+.uneven div {
+  margin-bottom: 10px;
+}
+.uneven div .line {
   background-color: black;
 }
 
@@ -73,6 +79,7 @@ h1 {
 
 h2 {
   text-align: center;
+  margin-bottom: 0;
 }
 
 h4 {
@@ -186,7 +193,7 @@ textarea {
   margin: 0px 36% 0px 36%;
 }
 
-#content {
+.content {
   position: fixed;
   top: 50%;
   left: 50%;

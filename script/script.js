@@ -45,7 +45,8 @@ openButtonDocker.addEventListener('click', () => {
 });
 
 // Close popup
-const closeButton = document.querySelectorAll('#close-popup');
+const closeButton = document.querySelectorAll('.popup-blur');
+
 closeButton[0].addEventListener('click', () => {
   popupContainerComposer.classList.remove('open');
 });

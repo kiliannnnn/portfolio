@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title> Accueil </title>
 
     <!-- stylesheet responsive-->
@@ -15,28 +15,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     
 </head>
-<header>
-    <nav>
-        <ul>
-            <li>
-                <a href="#home"><img src="assets/accueil.png"><div class="light"></div></a>
-            </li>
-            <li>
-                <a href="#projects"><img src="assets/projet.png"><div class="light"></div></a>
-            </li>
-            <li>
-                <a href="#skills"><img src="assets/skills.png"><div class="light"></div></a>
-            </li>
-            <li>
-                <a href="#curriculum"><img src="assets/destination.png"><div class="light"></div></a>
-            </li>
-            <li>
-                <a href="#contact"><img src="assets/contact.png"><div class="light"></div></a>
-            </li>
-        </ul>
-    </nav>
-</header>
 <body class="body-container">
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home"><img src="assets/accueil.png" alt="accueil"><div class="light"></div></a>
+                </li>
+                <li>
+                    <a href="#projects"><img src="assets/projet.png" alt="réalisations"><div class="light"></div></a>
+                </li>
+                <li>
+                    <a href="#skills"><img src="assets/skills.png" alt="compétences"><div class="light"></div></a>
+                </li>
+                <li>
+                    <a href="#curriculum"><img src="assets/destination.png" alt="parcours"><div class="light"></div></a>
+                </li>
+                <li>
+                    <a href="#contact"><img src="assets/contact.png" alt="contact"><div class="light"></div></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <section id="home" class="uneven">
         <h1 class="textMoveIn">Kilian<br>COUDURIER</h1>
         <h4>J'ai 20 ans, je suis étudiant et passionné d'informatique<br>
@@ -44,7 +44,11 @@
         </h4>            
     </section>
     <section id="projects" class="even">
-        <h2>Réalisations<div class="line"></div></h2>
+        <div>
+            <h2>Réalisations</h2>
+            <div class="line"></div>
+        </div>
+        
         <div class="container">
             <div class="flipcard">
                 <div class="front"><p>Ce site internet</p></div>
@@ -53,7 +57,10 @@
         </div>
     </section>
     <section id="skills" class="uneven">
-        <h2>Compétences<div class="line"></div></h2>
+        <div>
+            <h2>Compétences</h2>
+            <div class="line"></div>
+        </div>
 
         <button id="open-popup-composer"><img src="assets/composer.png" alt="composer logo"></button>
         <button id="open-popup-scss"><img src="assets/scss.png" alt="sass logo"></button>
@@ -65,7 +72,11 @@
         
     </section>
     <section id="curriculum" class="even">
-        <h2>Mon parcours<div class="line"></div></h2>
+        <div>
+            <h2>Mon parcours</h2>
+            <div class="line"></div>
+        </div>
+
         <div class="container">
             <div class="flipcard">
                 <div class="front" style="background-image: url('assets/saint-michel.jpg');"></div>
@@ -94,78 +105,83 @@
         </div>
     </section>
     <section id="contact" class="uneven">
-        <h2>Me contacter<div class="line"></div></h2>
+        <div>
+            <h2>Me contacter</h2>
+            <div class="line"></div>
+        </div>
+        
         <ul id="social">
-            <li><a href="https://github.com/kiliannnnn"><img src="assets/github.png"></a></li>
-            <li><a href="https://www.linkedin.com/in/kilian-coudurier-a59469229/"><img src="assets/linkedin.png"></a></li>
+            <li><a href="https://github.com/kiliannnnn"><img src="assets/github.png" alt="github logo"></a></li>
+            <li><a href="https://www.linkedin.com/in/kilian-coudurier-a59469229/"><img src="assets/linkedin.png" alt="linkedIn logo"></a></li>
         </ul>
         <ul>
-            <li><img src="assets/telephone.png"> : +33 7 82 43 07 53</li>
-            <li><img src="assets/email.png"> : coudurier.kilian@gmail.com</li>
+            <li><img src="assets/telephone.png" alt="phone logo"> : +33 7 82 43 07 53</li>
+            <li><img src="assets/email.png" alt="letter logo"> : coudurier.kilian@gmail.com</li>
             <li><h2>ou</h2></li>
         </ul>
         <form action="https://formsubmit.co/cce90e889152eb4e516d6b9076451d01" method="POST">
             <label for="sender"></label>
-            <input type="email" name="sender" required placeholder="Votre adresse e-mail">
+            <input id="sender" type="email" name="sender" required placeholder="Votre adresse e-mail">
             <label for="subject"></label>
-            <input type="text" name="subject" required placeholder="Objet">
+            <input id="subject" type="text" name="subject" required placeholder="Objet">
             <label for="message"></label>
-            <textarea name="message" required placeholder="Votre message"></textarea>
+            <textarea id="message" name="message" required placeholder="Votre message"></textarea>
             <input id="submit" type="submit">
         </form>
     </section>
-    <!-- popup & script -->
-    <div id="popup-container-composer" class="popup-container">
-        <div id="close-popup" class="popup-blur"></div>
-        <div id="content">
-            <h2>Composer</h2>
-            <p>J'ai découvert composer durant mon stage à NTN-SNR en Janvier 2023 pour réaliser la mise à jour d'un site drupal</p>
+    <footer>
+        <!-- popup & script -->
+        <div id="popup-container-composer" class="popup-container">
+            <div class="popup-blur"></div>
+            <div class="content">
+                <h2>Composer</h2>
+                <p>J'ai découvert composer durant mon stage à NTN-SNR en Janvier 2023 pour réaliser la mise à jour d'un site drupal</p>
+            </div>
         </div>
-    </div>
-    <div id="popup-container-scss" class="popup-container">
-        <div id="close-popup" class="popup-blur"></div>
-        <div id="content">
-            <h2>SCSS</h2>
-            <p>SCSS</p>
+        <div id="popup-container-scss" class="popup-container">
+            <div class="popup-blur"></div>
+            <div class="content">
+                <h2>SCSS</h2>
+                <p>SCSS</p>
+            </div>
         </div>
-    </div>
-    <div id="popup-container-js" class="popup-container">
-        <div id="close-popup" class="popup-blur"></div>
-        <div id="content">
-            <h2>JS</h2>
-            <p>JS</p>
+        <div id="popup-container-js" class="popup-container">
+            <div class="popup-blur"></div>
+            <div class="content">
+                <h2>JS</h2>
+                <p>JS</p>
+            </div>
         </div>
-    </div>
-    <div id="popup-container-php" class="popup-container">
-        <div id="close-popup" class="popup-blur"></div>
-        <div id="content">
-            <h2>PHP</h2>
-            <p>PHP</p>
+        <div id="popup-container-php" class="popup-container">
+            <div class="popup-blur"></div>
+            <div class="content">
+                <h2>PHP</h2>
+                <p>PHP</p>
+            </div>
         </div>
-    </div>
-    <div id="popup-container-mysql" class="popup-container">
-        <div id="close-popup" class="popup-blur"></div>
-        <div id="content">
-            <h2>Mysql</h2>
-            <p>Mysql</p>
+        <div id="popup-container-mysql" class="popup-container">
+            <div class="popup-blur"></div>
+            <div class="content">
+                <h2>Mysql</h2>
+                <p>Mysql</p>
+            </div>
         </div>
-    </div>
-    <div id="popup-container-drupal" class="popup-container">
-        <div id="close-popup" class="popup-blur"></div>
-        <div id="content">
-            <h2>Drupal</h2>
-            <p>Drupal</p>
+        <div id="popup-container-drupal" class="popup-container">
+            <div class="popup-blur"></div>
+            <div class="content">
+                <h2>Drupal</h2>
+                <p>Drupal</p>
+            </div>
         </div>
-    </div>
-    <div id="popup-container-docker" class="popup-container">
-        <div id="close-popup" class="popup-blur"></div>
-        <div id="content">
-            <h2>Docker</h2>
-            <p>Docker</p>
+        <div id="popup-container-docker" class="popup-container">
+            <div class="popup-blur"></div>
+            <div class="content">
+                <h2>Docker</h2>
+                <p>Docker</p>
+            </div>
         </div>
-    </div>
-    <script src="script/script.js" type="text/javascript"></script>
+        <script src="script/script.js"></script>
     <!-- -->
+    </footer>
 </body>
-<footer></footer>
 </html>
