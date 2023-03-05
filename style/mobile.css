@@ -37,13 +37,13 @@ section {
   background-color: black;
 }
 
-ul, #contact > #social {
+nav > ul, #contact > #social {
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: space-evenly;
 }
-ul li, #contact > #social li {
+nav > ul li, #contact > #social li {
   display: block;
   padding: 3px;
 }
@@ -114,6 +114,17 @@ textarea {
   display: block;
 }
 
+#submit {
+  cursor: pointer;
+  background-color: rgb(55, 140, 255);
+  color: white;
+  border: none;
+}
+
+#submit:hover {
+  background-color: rgba(55, 140, 255, 0.8);
+}
+
 .container {
   height: 250px;
   max-width: 400px;
@@ -146,6 +157,16 @@ textarea {
   background-color: #EDF7F6;
   color: black;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+.front ul, .back ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.front ul li, .back ul li {
+  display: block;
 }
 
 .back {
@@ -209,6 +230,7 @@ textarea {
   width: 100%;
   background-color: #ddd;
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .popup-container {
@@ -225,10 +247,29 @@ textarea {
 }
 
 #skills > button {
+  cursor: pointer;
   height: auto;
   aspect-ratio: 1/1;
 }
 #skills > button img {
   max-height: 150px;
   width: 150px;
+}
+
+.skill-icon {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+.skill-icon img {
+  height: auto;
+  width: 100%;
+}
+
+.next-page {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  right: 5px;
+  bottom: 0px;
 }/*# sourceMappingURL=mobile.css.map */
