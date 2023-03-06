@@ -68,3 +68,20 @@ closeButton[5].addEventListener('click', () => {
 closeButton[6].addEventListener('click', () => {
   popupContainerDocker.classList.remove('open');
 });
+
+
+
+
+
+
+
+//rebuild
+
+const nav_links = document.querySelectorAll('.nav-link');
+
+$('.menu-toggle').click(function() {
+  $('.menu-bg').toggle('show')
+  nav_links.forEach((link) => {
+    link.classList.toggle('show');
+  });
+});

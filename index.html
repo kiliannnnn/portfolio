@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title> Accueil </title>
+    <title>Accueil</title>
     <link rel="icon" type="favicon" href="assets/lettre-k.png">
 
     <!-- stylesheet responsive-->
@@ -12,31 +12,39 @@
     <link rel="stylesheet" media="screen and (width > 1440px)" href="style/desktop.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 </head>
 <body class="body-container">
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#home"><img src="assets/accueil.png" alt="accueil"><div class="light"></div></a>
-                </li>
-                <li>
-                    <a href="#projects"><img src="assets/projet.png" alt="réalisations"><div class="light"></div></a>
-                </li>
-                <li>
-                    <a href="#skills"><img src="assets/skills.png" alt="compétences"><div class="light"></div></a>
-                </li>
-                <li>
-                    <a href="#curriculum"><img src="assets/destination.png" alt="parcours"><div class="light"></div></a>
-                </li>
-                <li>
-                    <a href="#contact"><img src="assets/contact.png" alt="contact"><div class="light"></div></a>
-                </li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <p class="header-logo"><a href="https://kiliancoudurier.netlify.app">&gt;&vert;&lt;</a></p>
+            <nav class="main-menu">
+                <ul>
+                    <li>
+                        <a class="nav-link" href="#home">Accueil</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#projects">Mes Réalisations</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#skills">Mes Compétences</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#curriculum">Mon Parcours</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#contact">Me Contacter</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <div class="menu-toggle-inner">
+                    <div class="menu-toggle-line top-line"></div>
+                    <div class="menu-toggle-line bottom-line"></div>
+                </div>
+            </div>
+            <div class="menu-bg"></div>
+        </div>
     </header>
     <section id="home" class="uneven">
         <h1 class="textMoveIn">Kilian<br>COUDURIER</h1>

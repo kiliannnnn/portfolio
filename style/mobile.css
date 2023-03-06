@@ -1,9 +1,9 @@
 @font-face {
-  font-family: "Gloock";
-  src: url(../assets/Gloock/Gloock-Regular.ttf);
+  font-family: "Roboto";
+  src: url(../assets/Roboto/Roboto-Regular.ttf);
 }
 * {
-  font-family: "Gloock";
+  font-family: "Roboto";
 }
 
 body {
@@ -37,40 +37,15 @@ section {
   background-color: black;
 }
 
-nav > ul, #contact > #social {
+#contact * li {
+  display: block;
+  padding: 3px;
+}
+#contact #social {
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: space-evenly;
-}
-nav > ul li, #contact > #social li {
-  display: block;
-  padding: 3px;
-}
-
-nav {
-  z-index: 1;
-  position: fixed;
-  width: 100vw;
-  bottom: 0;
-  height: auto;
-  border-top: 1px solid black;
-}
-nav ul {
-  background-color: rgb(55, 140, 255);
-}
-nav ul .light {
-  position: absolute;
-  margin-left: -8px;
-  margin-top: -40px;
-  width: 48px;
-  height: 0px;
-  background-color: darkblue;
-  opacity: 0.3;
-  border-radius: 20px;
-}
-nav ul li :hover .light {
-  height: 42px;
 }
 
 h1 {
@@ -85,10 +60,6 @@ h2 {
 h4 {
   font-size: 24px;
   animation: textAppearIn 3.4s;
-}
-
-footer {
-  height: 50px;
 }
 
 input, textarea {
@@ -272,4 +243,68 @@ textarea {
   width: 32px;
   right: 5px;
   bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  margin: 10px 10px 0px;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.header-inner {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 18px;
+  min-width: 50%;
+}
+
+.main-menu {
+  width: 100%;
+  display: flex;
+}
+.main-menu li {
+  display: block;
+}
+
+.menu-toggle {
+  position: absolute;
+  right: 40px;
+}
+
+.menu-toggle-line {
+  width: 26px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0px;
+}
+
+.nav-link {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.menu-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: -1;
+  display: none;
 }/*# sourceMappingURL=mobile.css.map */
