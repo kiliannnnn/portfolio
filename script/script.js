@@ -85,3 +85,11 @@ $('.menu-toggle').click(function() {
     link.classList.toggle('show');
   });
 });
+nav_links.forEach((link) => {
+  link.addEventListener('click', () => {
+    $('.menu-bg').toggle('show')
+    nav_links.forEach((link) => {
+      link.classList.toggle('show');
+    });
+  });
+});

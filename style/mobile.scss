@@ -1,17 +1,9 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url(../assets/Roboto/Roboto-Regular.ttf);
-}
-* {
-    font-family: 'Roboto';
-}
-
 body {
     margin: 0;
 }
 section {
     height: auto;
-    padding: 10px;
+    padding: 20px;
 }
 .even {
     background-color: #048ba8;
@@ -34,6 +26,10 @@ section {
     }
 }
 #contact {
+    ul {
+        display: block;
+        padding: 0;
+    }
     * {
         li {
             display: block;
@@ -45,7 +41,7 @@ section {
         margin: 0;
         display: flex;
         justify-content: space-evenly;
-}
+    }
 }
 h1 {
     font-size: 40px;
@@ -73,11 +69,6 @@ input, textarea {
 }
 textarea {
     height: 100px;
-}
-#contact {
-    ul {
-        display: block;
-    }
 }
 #submit {
     cursor: pointer;
@@ -258,15 +249,20 @@ textarea {
 
 
 //common
+@font-face {
+    font-family: 'Roboto';
+    src: url(../assets/Roboto/Roboto-Regular.ttf);
+}
+* {
+    font-family: 'Roboto';
+    color: rgb(50, 50, 50);
+}
 a {
     text-decoration: none;
 }
-
-
-//body
-body {
+html {
+    scroll-behavior: smooth;
 }
-
 
 //header
 header {
@@ -288,8 +284,15 @@ header {
     min-width: 50%;
 }
 .main-menu {
-    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 96vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    translate: -100vw;
     li {
         display: block;
     }
@@ -305,10 +308,26 @@ header {
     margin: 4px 0px;
 }
 .nav-link {
-    display: none;
+}
+.first-element {
+    transition-delay: 0s;
+}
+.second-element {
+    transition-delay: 0.15s;
+}
+.third-element {
+    transition-delay: 0.30s;
+}
+.fourth-element {
+    transition-delay: 0.45s;
+}
+.fifth-element {
+    transition-delay: 0.60s;
 }
 .show {
     display: block;
+    transform: translate(100vw);
+    transition-duration: 0.8s;
 }
 .menu-bg {
     position: fixed;
@@ -319,4 +338,16 @@ header {
     background-color: white;
     z-index: -1;
     display: none;
+}
+
+//accueil
+#home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    h1 {
+        text-align: right;
+    }
 }
