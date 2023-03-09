@@ -4,7 +4,7 @@ body {
 
 section {
   height: auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 .even {
@@ -307,19 +307,19 @@ header {
 }
 
 .second-element {
-  transition-delay: 0.15s;
+  transition-delay: 0.1s;
 }
 
 .third-element {
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
 }
 
 .fourth-element {
-  transition-delay: 0.45s;
+  transition-delay: 0.3s;
 }
 
 .fifth-element {
-  transition-delay: 0.6s;
+  transition-delay: 0.4s;
 }
 
 .show {
@@ -348,4 +348,16 @@ header {
 }
 #home h1 {
   text-align: right;
+}
+
+.card {
+  background-color: rgb(37, 37, 37);
+  height: 400px;
+  width: 100%;
+  margin: auto;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }/*# sourceMappingURL=mobile.css.map */
