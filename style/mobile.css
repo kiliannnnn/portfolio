@@ -367,11 +367,11 @@ header {
   padding: 8px;
 }
 
-.card-extension:hover {
+.card-mobile {
   transform: translateY(-70%);
   transition: 0.5s;
 }
-.card-extension:hover .card-arrow {
+.card-mobile .card-arrow {
   transform: rotate(180deg);
   transition: 0.5s;
 }

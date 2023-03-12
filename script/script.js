@@ -93,3 +93,11 @@ nav_links.forEach((link) => {
     });
   });
 });
+
+const card = document.querySelectorAll('.card-extension');
+
+$('.card-extension').click(function() {
+  card.forEach((card) => {
+    card.classList.toggle('card-mobile');
+  });
+});
