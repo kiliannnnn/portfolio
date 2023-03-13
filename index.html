@@ -4,17 +4,22 @@
     <meta charset="utf-8">
     <title>Accueil</title>
     <link rel="icon" type="favicon" href="assets/lettre-k.png">
-
-    <!-- stylesheet responsive-->
-    <link rel="stylesheet" href="style/mobile.css">
-    <link rel="stylesheet" media="screen and (width > 450px)" href="style/tablet.css">
-    <link rel="stylesheet" media="screen and (width > 1020px)" href="style/laptop.css">
-    <link rel="stylesheet" media="screen and (width > 1440px)" href="style/desktop.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- mobile stylesheet -->
+    <link rel="stylesheet" href="style/mobile.css">
+    <!-- tablet stylesheet -->
+    <link rel="stylesheet" media="screen and (width > 450px)" href="style/tablet.css">
+    <!-- laptop stylesheet -->
+    <link rel="stylesheet" media="screen and (width > 1020px)" href="style/laptop.css">
+    <!-- desktop stylesheet -->
+    <link rel="stylesheet" media="screen and (width > 1440px)" href="style/desktop.css">
+    <!--jquery-->
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <!--css-doodle-->
+    <script src="https://unpkg.com/css-doodle@0.34.5/css-doodle.min.js"></script>
 </head>
-<body class="body-container">
+<body class="body-container">        
     <header>
         <nav class="main-menu">
             <ul>
@@ -72,10 +77,6 @@
         </div>
 
 
-
-
-
-
         <div class="">
             <div class="card">
                 <div class="card-logo">
@@ -91,7 +92,7 @@
         <div class="container">
             <div class="flipcard">
                 <div class="front">
-                    <img src="assets/composer.png">
+                    <img src="assets/composer.png" class="card-image">
                 </div>
                 <div class="back">
                     <div class=""></div>
@@ -104,7 +105,7 @@
         <div class="container">
             <div class="flipcard">
                 <div class="front">
-                    <img src="assets/saint-michel.jpg" class="card-test">
+                    <img src="assets/saint-michel.jpg" class="card-image">
                 </div>
                 <div class="back">
                     <div class=""></div>
@@ -123,70 +124,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-        
-        <!--
-        <div class="container">
-            <div class="flipcard">
-                <div class="front">
-                    <h3>Mise à jour du CMS d'un site web interne à l'entreprise</h3>
-                    <ul>
-                        <li>
-                            <div class="skill-icon"><img src="assets/docker.png"></div>
-                        </li>
-                        <li>
-                            <div class="skill-icon"><img src="assets/composer.png"></div>
-                        </li>
-                        <li>
-                            <div class="skill-icon"><img src="assets/drupal.png"></div>
-                        </li>
-                        <li>
-                            <div class="skill-icon"><img src="assets/php.png"></div>
-                        </li>
-                    </ul>
-                    <div class="next-page"><img src="assets/next-page.png"></div>
-                </div>
-                <div class="back">
-                    <p>Passage d'un site sous drupal 8.1 vers drupal 9.5.<br><br>Le but étant de migrer les données pour une version du CMS stable, non dépréciée et qui dispose des modules nécessaires au bon fonctionnement du site.<br><br>N'ayant aucune éxperience préalable, j'ai appris à me servir de docker, de composer, et le fonctionnement de drupal</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="flipcard">
-                <div class="front">
-                    <h3>Création d'un site web pour une boulangerie</h3>
-                    <ul>
-                        <li>
-                            <div class="skill-icon"><img src="assets/html.png"></div>
-                        </li>
-                        <li>
-                            <div class="skill-icon"><img src="assets/css.png"></div>
-                        </li>
-                        <li>
-                            <div class="skill-icon"><img src="assets/php.png"></div>
-                        </li>
-                        <li>
-                            <div class="skill-icon"><img src="assets/mysql.png"></div>
-                        </li>
-                    </ul>
-                    <div class="next-page"><img src="assets/next-page.png"></div>
-                </div>
-                <div class="back">
-                    <p>Site web divisé en 2 parties : </p>
-                    <p>Site web vitrine de présentation de l'établissement</p>
-                    <p>Page administrateur permettant de gérer la base de données par le biais de formulaires</p>
-                </div>
-            </div>
-        </div>
-        -->
     </section>
     <section id="skills">
         <div class="section-title">
@@ -323,7 +260,6 @@
             </div>
         </div>
         <script src="script/script.js"></script>
-    <!-- -->
     </footer>
 </body>
 </html>

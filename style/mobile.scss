@@ -239,7 +239,7 @@ textarea {
 //common
 @font-face {
     font-family: 'Roboto';
-    src: url(../assets/Roboto/Roboto-Regular.ttf);
+    src: url(../assets/RobotoFlex[GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght].ttf);
 }
 * {
     font-family: 'Roboto';
@@ -404,23 +404,7 @@ header {
 .veille-txt {
     padding: 16px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//test from card-mobile to flipcard
-
-.card-test {
+.card-image {
     height: inherit;
     width: inherit;
     border-radius: inherit;
