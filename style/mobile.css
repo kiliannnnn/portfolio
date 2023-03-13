@@ -7,25 +7,10 @@ section {
   padding: 10px;
 }
 
-.even {
-  background-color: #048ba8;
-  color: white;
-}
-.even div {
+.section-title {
   margin-bottom: 10px;
 }
-.even div .line {
-  background-color: white;
-}
-
-.uneven {
-  background-color: #EDF7F6;
-  color: black;
-}
-.uneven div {
-  margin-bottom: 10px;
-}
-.uneven div .line {
+.section-title .line {
   background-color: black;
 }
 
@@ -250,6 +235,11 @@ a {
   text-decoration: none;
 }
 
+p > a {
+  text-decoration: underline;
+  color: rgb(55, 140, 255);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -294,6 +284,9 @@ header {
   position: absolute;
   right: 40px;
 }
+.menu-toggle :hover {
+  cursor: pointer;
+}
 
 .menu-toggle-line {
   width: 26px;
@@ -320,6 +313,10 @@ header {
 
 .fifth-element {
   transition-delay: 0.4s;
+}
+
+.sixth-element {
+  transition-delay: 0.5s;
 }
 
 .show {
@@ -391,4 +388,29 @@ header {
           clip-path: polygon(0 100%, 50% 0, 100% 100%, 85% 100%, 50% 25%, 15% 100%);
   margin: auto;
   transition: 0.5s;
+}
+
+.veille {
+  background-color: #EDF7F6;
+  width: 96%;
+  height: auto;
+  box-shadow: 2px 2px 5px 0px #1f1f1f;
+  margin: auto;
+}
+
+.veille-img {
+  height: 96px;
+  aspect-ratio: 1/1;
+  display: block;
+  margin: auto;
+}
+
+.veille-txt {
+  padding: 16px;
+}
+
+.card-test {
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
 }/*# sourceMappingURL=mobile.css.map */
